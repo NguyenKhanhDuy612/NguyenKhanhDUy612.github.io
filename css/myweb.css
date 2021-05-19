@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.s{
+    width: 100%;
+    height: 400px;
+}
+.cart{
+    overflow: hidden;
+
+}
+
+.cart img{
+    transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.cart img:hover{
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+.menu-banner{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+}
+.banner{
+    max-width: 100%;
+    position: relative;
+}
+.input-group input{
+    width: 150px;
+}
+.banner-mobile{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .banner-desktop{
+    display: none;
+    }
+    .banner-mobile{
+        display: block;
+    }
+}

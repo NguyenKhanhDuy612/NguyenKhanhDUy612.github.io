@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bất Động Sản</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="media/icon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+    <script src="js/all.min.js"></script>
+    <script src="js/brands.min.js"></script>
+    <script src="js/solid.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+
+  
+    <!--***************** Thêm CSS tự viết *****************************-->
+    <link rel="stylesheet" href="css/myweb.css" />
+    <!--****************************************************************-->
+  
+    <!--***************** Thêm JavaScript tự viết **********************-->
+    <script src="js/myweb.js"></script>
+    <!--****************************************************************-->
+    
+  
+<body>
+<!-- modal -->
+    <div class="modal fade" id="DN" tabindex="-1" aria-labelledby="modalDN" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDN">Đăng nhập</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tên: </label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mật khẩu:</label>
+                <input class="form-control" type="password" id="password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đăng Ký</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Đăng nhập</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- het modal -->
+
+<!-- Banner -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="banner-desktop">
+                <div class="row no-gutters menu-banner">
+                    <div class="col-md-6 my-5 text-left">
+                      <a class="navbar-brand top-left" href="#"><img src="media/logo.svg" alt=""></a>
+                    <span style="font-size: 40px;">Bất động sản</span>
+                </div>
+
+                <div class="col-md-6 my-5 top-right">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                      <div class="input-group-append">
+                          <button class="btn btn-success" type="submit">Tìm kiếm</button>
+                      </div>
+                    </div>
+                  </div>                
+                </div>
+                <img src="media/banner.jpg" class="s" alt="">
+        </div>
+      </div>
+
+        <div class="banner-mobile">
+            <div class="row">
+              <div class="col-md-12 my-5 text-center">
+                <a class="navbar-brand" href="#"><img src="media/logo.svg" alt=""></a>
+                <span style="font-size: 30px;">Bất động sản</span>
+              </div>
+            
+                      <div class="col-md-12 my-5 " >
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                          <div class="input-group-append">
+                              <button class="btn btn-success "  type="submit">Tìm kiếm</button>
+                          </div>
+                        </div>
+                      </div>
+            <img src="media/banner.jpg" class="s" alt="banner">
+        </div>
+  </div>
+</div>
+  <!-- banner -->
+
+
+<!--  menu -->
+  <nav class="navbar navbar-expand-md bg-light navbar-light d-flex sticky-top " id="parent">
+    <div class="navbar-toggler text-center w-100 border-0 p-0">
+      <button class="navbar-toggler float-right" data-toggle="collapse" data-target="#mnch">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="navbar-toggler float-left" data-toggle="collapse" data-target="#tk">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse " id="tk" data-parent="#parent">
+      <form class="form-inline my-3 my-md-0">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DN" data-whatever="@mdo">Đăng nhập</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DN" data-whatever="@fat">Đăng ký</button>
+      </form>
+  </div>
+
+  <div class="collapse navbar-collapse justify-content-end text-right" id="mnch"  data-parent="#parent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Trang chủ</a>
+            <div class="dropdown-menu"> 
+                <a class="dropdown-item" href="#">Tin nổi bật</a>
+                <div class="dropdown-divider"></div> 
+                <a class="dropdown-item" href="#">Tư vấn</a>
+            </div>
+        </li>
+          <li class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Dự án</a>
+              <div class="dropdown-menu"> 
+                  <a class="dropdown-item" href="#">Căn hộ</a>
+                    <div class="dropdown-divider"></div> 
+                  <a class="dropdown-item" href="#">Cao ốc</a>
+                    <div class="dropdown-divider"></div> 
+                  <a class="dropdown-item" href="#">Khu đô thị</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                Nội thất
+            </a>
+            <div class="dropdown-menu"> 
+                <a class="dropdown-item" href="#">Xây dựng</a>
+                  <div class="dropdown-divider"></div> 
+                <a class="dropdown-item" href="#">Kiến trúc</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Phong thủy</a>
+          <div class="dropdown-menu"> 
+              <a class="dropdown-item" href="#">Cho tuổi</a>
+                <div class="dropdown-divider"></div> 
+              <a class="dropdown-item" href="#">Gia đình</a>
+          </div>
+        </li>
+      </ul>
+  </div>
+</nav>
+<!-- het menu chinh -->
+
+<!-- slide -->
+<div id="sl" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#sl" data-slide-to="0" class="active"></li>
+    <li data-target="#sl" data-slide-to="1"></li>
+    <li data-target="#sl" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/s11.JPG" class="s d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block" style="color: rgb(104, 31, 9);">
+        <h5>BẢO SƠN RESIDENCE</h5>
+        <p>Dự án Bảo Sơn Tân Phú Center, Đường Nguyễn Sơn, Phường Phú Thạnh, Tân Phú, Hồ Chí Minh</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/s2.jpg" class="s " alt="...">
+      <div class="carousel-caption ">
+        <h5>ALA ĐẠI QUANG MINH</h5>
+        <p>Dự án Đại Quang Minh, Đường Nguyễn Cơ Thạch, Phường An Lợi Đông, Quận 2, Hồ Chí Minh</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/s33.jpg" class="s d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block" style="color: rgb(19, 20, 19);">
+        <h5>VINHOMES GRAND PARK</h5>
+        <p>Dự án Vinhomes Grand Park quận 9, Đường Nguyễn Xiển, Phường Long Thạnh Mỹ, Quận 9, Hồ Chí Minh</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#sl" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#sl" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- Het slide -->
+
+<!-- Noi dung -->
+  <div class="container-fluid">
+    <div class="row text-center pt-3">
+        <div class="col-6 col-lg-3">
+            <div class="cart rounded-0 ">
+                <img src="media/a1.jpg" alt="" class="card-img-top rounded-0 i4" id="fiximg">
+                <div class="card-body">
+                    <p class="lead  pt-3">
+                      Tôi cần bán căn hộ chung cư biệt thự Đại Quang Minh.
+                    <br> Diện tích: 331,5m<sup>2</sup> và 370m<sup>2</sup>.
+                      <br> Xây dựng: 1 hầm, 3 tầng và áp mái.
+                      <br> Diện tích sử dụng tương ứng: ~ 750m<sup>2</sup>.
+                      <br> Pháp lý: Sở hữu lâu dài.
+                      <br> Giá thương lượng.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="cart rounded-0 ">
+                <img src="media/a2.jpg" alt="" class="card-img-top rounded-0 i4">
+                <div class="card-body">
+                    <p class="lead  pt-3">
+                      Tôi cần bán căn hộ chung cư cao cấp tại quận Tân Phú vị trí đắc địa không có khu thứ 2.
+                      <br> Diện tích: 128m<sup>2</sup>,  Quy mô 41 căn gồm shophouse và biệt thự phố cao cấp.Mua nhà trả góp 20 năm lãi suất 0%, xây dựng 1 trệt 6 lầu có tích hợp thang máy thuận tiện kinh doanh.
+                      <br> Giá: 17.2 tỷ.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3 ">
+            <div class="cart rounded-0 "> <img src="media/a3.jpg" alt="" class="card-img-top rounded-0 i4">
+                <div class="card-body">
+                    <p class="lead  pt-3">
+                      Tôi cần bán căn hộ chung cư cao cấp Long Biên, khu đô thị cực kỳ an ninh.
+                      <br> Diện tích: 60m<sup>2</sup>, thiết kế 2 phòng ngủ, 1 phòng vệ sinh, 1 phòng khách, bếp. Các phòng ngủ đều có ánh sáng tự nhiên. Hoàn thiện đẹp, có thể về ở luôn.
+                      <br> Tình trạng pháp lý: Đã có sổ đỏ.
+                      <br> Giá: 2.1 tỷ.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+            <div class="cart rounded-0">
+                <img src="media/a4.jpg" alt="" class="card-img-top rounded-0 i4">
+                <div class="card-body">
+                    <p class="lead  pt-3">
+                      Tôi muốn bán căn siêu phẩm dinh thự nằm trong khu đế vương 2 mặt sông cực kỳ an ninh và cao cấp
+                    <br> Diện tích 1550m<sup>2</sup>, Hồ bơi villa trước không gian siêu đẹp và thoáng mát, nằm bên cạnh 6 căn dinh thự khác, là nơi an ninh cao cấp của giới siêu giàu Việt Nam.
+                    <br> Gần trung tâm thành phố Thủ Thiêm Quận 1 TP. HCM.
+                    <br> Có mức giá 75 tỷ.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+<!-- Het 4 noi dung -->
+
+<!-- Footer -->
+  <footer class="text-center text-md-start bg-light text-muted">
+      <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
+        <div class="me-5 d-none d-md-block">
+          <span>Bạn có thể kết nói với chúng tôi qua các trang mạng: </span>
+        </div>
+        <div>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-sm-6 col-md-6 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="https://staticfile.batdongsan.com.vn/images/Logo/ic_logo_2.svg" alt="">
+              </h6>
+              <p>
+                Công ty chúng tôi luôn cung cấp và cập nhật các căn hộ mới và phù hợp.
+              </p>
+            </div>
+            <div class="col-sm-6 col-md-6 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Liên Hệ
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Số 2 Nguyễn Đình Chiểu, Vĩnh Thọ, Thành phố Nha Trang</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>Duy01657853612@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> (+84) 35 7853 612  </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4 navbar-light bg-light">© 2021 Copyright:
+        <a class="text-reset fw-bold " href="#">NguyenKhanhDuy_61133540</a>
+      </div>
+  </footer>
+  <!-- Het Footer -->
+
+</body>
+</html>
+
